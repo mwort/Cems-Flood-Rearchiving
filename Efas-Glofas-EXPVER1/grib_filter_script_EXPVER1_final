@@ -302,6 +302,9 @@ if ( marsClass == 35 )
 			
 
 				switch (inputProcessIdentifier) {
+					case '161':
+						# IFS cy50r1, from 2026-05-12
+				        set inputProcessIdentifier=16;
 					case '158':
 						#set inputModelVersion='13';
 				        set inputProcessIdentifier=13;
@@ -310,6 +313,9 @@ if ( marsClass == 35 )
 				        set inputProcessIdentifier=13;
 					case '154':
 						#set inputModelVersion='9';
+				        set inputProcessIdentifier=9;
+					case '15405':
+						# cy48r1 with a suffix, e.g. 20240207-08 dis
 				        set inputProcessIdentifier=9;
 					case '145':
 						set inputProcessIdentifier=65533;  # SFO : The inputProcessIdentifier was never set to the ERA5 generatingProcessIdentifier; instead, the IFS generatingProcessIdentifier was used.
