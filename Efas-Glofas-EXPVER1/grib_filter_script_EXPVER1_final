@@ -343,6 +343,9 @@ if ( marsClass == 35 )
 		# Seasonal and seasonal reforecast
 		if(marsStream == 1062 || marsStream == 1066 ) 
 			{
+				if (marsStream == 1066) {
+					set experimentVersionNumber=0004; # seasonal reforecasts in their own expver
+				}
 				if (marsStream == 1066 && dataDate < 20170101) {
 					set numberOfForecastsInEnsemble = 25; # seasonal reforecast hdates before 2017 have 25 members
 				} else {
